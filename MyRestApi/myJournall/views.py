@@ -34,3 +34,28 @@ def journalTaskList(request):
 	return Response(serializer.data)
 
 
+@api_view(['POST'])
+def journalTaskCreate(request):
+    serializer = JournallSerializer(data=request.data)
+
+    if serializer.is_valid():
+        serializer.save()
+
+    return Response(serializer.data)
+
+@api_view(['POST'])
+def journalTaskUpdate(request, pk):
+    task = bulletJournal.objects.get(id=pk)
+    serializer = JournallSerializer(instance=task, data=request.data)
+
+    if serializer.is_valid():
+        serializer.save()
+
+    return Response(serializer.data)
+
+@api_view(['DELETE'])
+def journalTaskDelete(request, pk):
+    task = bulletJournal.objects.get(id=pk)
+    task.delete()
+
+    return Response('başarıyla silindi!')

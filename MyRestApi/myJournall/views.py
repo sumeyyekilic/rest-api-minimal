@@ -45,8 +45,8 @@ def journalTaskCreate(request):
 
 @api_view(['POST'])
 def journalTaskUpdate(request, pk):
-    task = bulletJournal.objects.get(id=pk)
-    serializer = JournallSerializer(instance=task, data=request.data)
+    journalTask = bulletJournal.objects.get(id=pk)
+    serializer = JournallSerializer(instance=journalTask, data=request.data)
 
     if serializer.is_valid():
         serializer.save()

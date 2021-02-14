@@ -1,6 +1,6 @@
 ### My Rest Framework Minimal API 
 
-<a href="https://imgflip.com/gif/4y00d1"><img src="https://imgflip.com/embed/4y00d1"/></a>
+![](4xzz45.gif)
 
 
 #### Requirements

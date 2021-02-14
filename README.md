@@ -1,6 +1,6 @@
 ### My Rest Framework Minimal API 
 
-![](4xzz45.gif)
+![](https://github.com/sumeyyekilic/rest-api-minimal/blob/master/MyRestApi/screenMedia/4xzz45.gif)
 
 
 #### Requirements

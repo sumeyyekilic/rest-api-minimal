@@ -1,7 +1,7 @@
 from rest_framework import serializers
-from .models import bulletJournal
+from .models import BulletJournal
 
 class JournallSerializer(serializers.ModelSerializer):
 	class Meta:
-		model = bulletJournal
+		model = BulletJournal
 		fields ='__all__'

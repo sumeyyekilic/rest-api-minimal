@@ -9,8 +9,6 @@ urlpatterns = [
     path('journalTask-create/', views.journalTaskCreate, name="journalTask-create"),
     path('journalTask-update/<str:pk>/', views.journalTaskUpdate, name="journalTask-update"),
     path('journalTask-delete/<str:pk>/', views.journalTaskDelete, name="journalTask-delete"),
-
-
 ]
 
 
